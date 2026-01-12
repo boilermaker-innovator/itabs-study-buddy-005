@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>AI Revolution StudyBuddy | Learn What's Happening with AI in 2026</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="AI just solved math problems humans couldn't crack for 50 years. Interactive study guide with 9 key concepts and video timestamps. Learn what's actually happening with AI.">
+    <meta name="keywords" content="AI, artificial intelligence, GPT, machine learning, Erdos problems, Terence Tao, study guide, 2026">
+    <meta name="author" content="iTabs StudyBuddy">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boilermaker-innovator.github.io/iTabs-study-buddy-004/">
+    <meta property="og:title" content="🚀 AI Revolution StudyBuddy">
+    <meta property="og:description" content="AI just solved math problems humans couldn't crack for 50 years. Learn what's happening - 9 key concepts with video timestamps.">
+    <meta property="og:image" content="https://img.youtube.com/vi/N8I2wYXt4m8/maxresdefault.jpg">
+    <meta property="og:site_name" content="iTabs StudyBuddy">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://boilermaker-innovator.github.io/iTabs-study-buddy-004/">
+    <meta name="twitter:title" content="🚀 AI Revolution StudyBuddy">
+    <meta name="twitter:description" content="AI just solved math problems humans couldn't crack for 50 years. Learn what's happening - 9 key concepts with video timestamps.">
+    <meta name="twitter:image" content="https://img.youtube.com/vi/N8I2wYXt4m8/maxresdefault.jpg">
+    <meta name="twitter:creator" content="@itaboratory">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#0f0f1a">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            background: #0f0f1a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: #0f0f1a;
+            background-image: linear-gradient(135deg, #0f0f1a 0%, #1a1a2e 50%, #16213e 100%);
+            background-attachment: fixed;
+            min-height: 100vh;
+            min-height: -webkit-fill-available;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        header h1 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        header p {
+            color: #a0a0a0;
+            font-size: 1rem;
+        }
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 217, 255, 0.2);
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .tips-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tip-count {
+            background: linear-gradient(90deg, #00d9ff, #00ff88);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #0f0f1a;
+        }
+
+        .tips-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .tip-item {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .tip-item:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(0, 217, 255, 0.5);
+            transform: translateX(5px);
+        }
+
+        .tip-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .tip-number {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #00d9ff, #00ff88);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+            color: #0f0f1a;
+            flex-shrink: 0;
+        }
+
+        .tip-title {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .info-btn {
+            width: 36px;
+            height: 36px;
+            background: rgba(0, 217, 255, 0.2);
+            border: 2px solid #00d9ff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1rem;
+            color: #00d9ff;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .tip-item:hover .info-btn {
+            background: #00d9ff;
+            color: #0f0f1a;
+        }
+
+        .popup-overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .popup-overlay.active {
+            display: flex;
+        }
+
+        .popup {
+            background: #1e1e2e;
+            border-radius: 16px;
+            max-width: 500px;
+            width: 100%;
+            max-height: 85vh;
+            overflow-y: auto;
+            position: relative;
+            animation: popupIn 0.3s ease;
+        }
+
+        @keyframes popupIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        .popup-header {
+            background: linear-gradient(135deg, #00d9ff, #00ff88);
+            padding: 20px;
+            border-radius: 16px 16px 0 0;
+            position: sticky;
+            top: 0;
+        }
+
+        .popup-header h3 {
+            color: #0f0f1a;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .popup-header .tip-num {
+            color: rgba(0,0,0,0.5);
+            font-size: 0.85rem;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            width: 32px;
+            height: 32px;
+            background: rgba(0,0,0,0.2);
+            border: none;
+            border-radius: 50%;
+            color: #0f0f1a;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s;
+        }
+
+        .close-btn:hover {
+            background: rgba(0,0,0,0.3);
+        }
+
+        .popup-body {
+            padding: 20px;
+        }
+
+        .popup-section {
+            margin-bottom: 20px;
+        }
+
+        .popup-section:last-child {
+            margin-bottom: 0;
+        }
+
+        .popup-section h4 {
+            color: #00d9ff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .popup-section p {
+            color: #d0d0d0;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .highlight-box {
+            background: rgba(0, 217, 255, 0.1);
+            border-left: 3px solid #00d9ff;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 10px;
+        }
+
+        .highlight-box.green {
+            background: rgba(0, 255, 136, 0.1);
+            border-left-color: #00ff88;
+        }
+
+        .highlight-text {
+            color: #e0e0e0;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+
+        .watch-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: linear-gradient(135deg, #00d9ff, #00ff88);
+            color: #0f0f1a;
+            text-decoration: none;
+            padding: 12px 20px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+            border: none;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .watch-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0, 217, 255, 0.4);
+        }
+
+        .timestamp {
+            background: rgba(0,0,0,0.3);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        .related-section {
+            margin-top: 40px;
+            padding: 20px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .related-section h3 {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .related-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            color: #ff6b6b;
+            text-decoration: none;
+            padding: 15px 25px;
+            border-radius: 10px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .related-link:hover {
+            background: rgba(255, 107, 107, 0.2);
+            border-color: #ff6b6b;
+            transform: translateY(-2px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: #666;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: #00d9ff;
+            text-decoration: none;
+        }
+
+        .credit {
+            margin-top: 10px;
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 AI Revolution StudyBuddy</h1>
+            <p>What's actually happening with AI right now (Jan 2026)</p>
+        </header>
+
+        <div class="video-container">
+            <iframe 
+                id="ytPlayer"
+                src="https://www.youtube.com/embed/N8I2wYXt4m8" 
+                title="AI Revolution - Wes Roth"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+
+        <div class="tips-header">
+            <span class="tip-count">9 Concepts</span>
+        </div>
+
+        <div class="tips-list">
+            <div class="tip-item" onclick="openPopup(0)">
+                <div class="tip-content">
+                    <span class="tip-number">1</span>
+                    <span class="tip-title">Crossing the Einstein Line</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(1)">
+                <div class="tip-content">
+                    <span class="tip-number">2</span>
+                    <span class="tip-title">The Erdős Problems</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(2)">
+                <div class="tip-content">
+                    <span class="tip-number">3</span>
+                    <span class="tip-title">Terence Tao Confirmed It</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(3)">
+                <div class="tip-content">
+                    <span class="tip-number">4</span>
+                    <span class="tip-title">GPT 5.2 Pro is the Breakthrough</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(4)">
+                <div class="tip-content">
+                    <span class="tip-number">5</span>
+                    <span class="tip-title">This Didn't Exist 3 Months Ago</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(5)">
+                <div class="tip-content">
+                    <span class="tip-number">6</span>
+                    <span class="tip-title">AI Can Be Cloned Infinitely</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(6)">
+                <div class="tip-content">
+                    <span class="tip-number">7</span>
+                    <span class="tip-title">The Quants Changed Everything</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(7)">
+                <div class="tip-content">
+                    <span class="tip-number">8</span>
+                    <span class="tip-title">Every Industry Gets Disrupted</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+
+            <div class="tip-item" onclick="openPopup(8)">
+                <div class="tip-content">
+                    <span class="tip-number">9</span>
+                    <span class="tip-title">We're at the Inflection Point</span>
+                </div>
+                <span class="info-btn">i</span>
+            </div>
+        </div>
+
+        <div class="related-section">
+            <h3>📚 Continue Learning</h3>
+            <a href="claude-prompting-study-buddy.html" class="related-link">
+                🧠 Learn How to Use Claude Better →
+            </a>
+        </div>
+
+        <footer>
+            <p>Built with 💡 by <a href="#">iTabs StudyBuddy</a></p>
+            <p class="credit">Video by Wes Roth</p>
+        </footer>
+    </div>
+
+    <div class="popup-overlay" id="popupOverlay" onclick="closePopup(event)">
+        <div class="popup" onclick="event.stopPropagation()">
+            <div class="popup-header">
+                <span class="tip-num" id="popupTipNum">Concept 1 of 9</span>
+                <h3 id="popupTitle">Title</h3>
+                <button class="close-btn" onclick="closePopup()">&times;</button>
+            </div>
+            <div class="popup-body" id="popupBody"></div>
+        </div>
+    </div>
+
+    <script>
+        var concepts = [
+            {
+                title: "Crossing the Einstein Line",
+                timestamp: 0,
+                timeDisplay: "0:00",
+                explanation: "AI capability is moving from average human intelligence toward genius-level intelligence. We are witnessing the transition from AI being cute and adorable to genuinely surprising and powerful.",
+                keyPoint: "We are currently watching AI cross from that is cute to WTF territory.",
+                realWorld: "This is not hype - it is verified by the top mathematicians who are seeing AI solve problems they could not."
+            },
+            {
+                title: "The Erdos Problems",
+                timestamp: 26,
+                timeDisplay: "0:26",
+                explanation: "Paul Erdos was a legendary mathematician who created a collection of unsolved problems - 1,135 of them. He described these as acorns from which mighty oaks can develop. These are genuinely hard problems that the best mathematicians have not cracked for decades.",
+                keyPoint: "About 40% have been solved by humans over many years. AI just started solving more in the last few DAYS.",
+                realWorld: "Problem #728 and #397 were both solved by AI in January 2026. These had stumped humans for 50+ years."
+            },
+            {
+                title: "Terence Tao Confirmed It",
+                timestamp: 87,
+                timeDisplay: "1:27",
+                explanation: "Terence Tao is considered the Mozart of mathematics - possibly the greatest living mathematician. He was teaching kids to count at age 2, taking university math at 9, and won the International Mathematical Olympiad gold medal at 13 (still the youngest ever).",
+                keyPoint: "Tao confirmed AI solved Erdos problem #728 more or less autonomously with genuine new methods - not copied from existing solutions.",
+                realWorld: "This is not some random claim. The most credible person in mathematics is saying this is real."
+            },
+            {
+                title: "GPT 5.2 Pro is the Breakthrough",
+                timestamp: 286,
+                timeDisplay: "4:46",
+                explanation: "OpenAI GPT 5.2 Pro (released December 11, 2025) is the specific model driving most of these mathematical breakthroughs. It is the first model capable of making real dents in unsolved math problems.",
+                keyPoint: "Most solutions on Terence Tao tracker came from GPT 5.2 Pro specifically - not Claude, not Gemini, not older GPT versions.",
+                realWorld: "Neil Somi (quantitative researcher at Citadel) used GPT 5.2 Pro to solve problem #397 over a weekend. It was accepted by Terence Tao."
+            },
+            {
+                title: "This Did Not Exist 3 Months Ago",
+                timestamp: 465,
+                timeDisplay: "7:45",
+                explanation: "Looking at the dates on Terence Tao GitHub tracker, almost all AI-generated solutions are from late November 2025, December 2025, or January 2026. This capability is brand new.",
+                keyPoint: "We went from AI solving math problems? That is crazy talk to Of course AI solves math problems in just weeks.",
+                realWorld: "Just a few weeks ago, someone claiming an LLM solved a major math problem was accused of LLM psychosis. Now it is confirmed fact."
+            },
+            {
+                title: "AI Can Be Cloned Infinitely",
+                timestamp: 1080,
+                timeDisplay: "18:00",
+                explanation: "Even if AI is only EQUAL to the best mathematicians (not better), there is a crucial difference: you can run a million copies of AI simultaneously. It works 24/7 without fatigue. It can read every paper ever written.",
+                keyPoint: "One breakthrough model = unlimited copies running forever, reading everything, never sleeping.",
+                realWorld: "GPT 5.2 Pro is one model. Make a million copies. Run them all. That is more math capability than all human mathematicians combined."
+            },
+            {
+                title: "The Quants Changed Everything",
+                timestamp: 840,
+                timeDisplay: "14:00",
+                explanation: "Before the 1970s, trading was gut feeling and intuition. Then quants (quantitative analysts) brought math and algorithms. They completely transformed finance. The same happened to logistics, agriculture, politics, dating, and advertising.",
+                keyPoint: "When math enters an industry, that industry gets disrupted. The people with math win. The people without it lose.",
+                realWorld: "Delivery companies discovered you should never turn left (if driving on right side). That came from math, not human intuition."
+            },
+            {
+                title: "Every Industry Gets Disrupted",
+                timestamp: 1219,
+                timeDisplay: "20:19",
+                explanation: "If AI can do math at genius level, it will quant every remaining industry. Medicine: personalized treatments. Legal: finding high-reward lawsuits automatically. Infrastructure: optimizing every design of every component.",
+                keyPoint: "What if every single thing humans design could be 10-15% better? Every mask, steering wheel, building, energy grid?",
+                realWorld: "We do not have enough human brainpower to deeply optimize every tiny design decision. AI might make that cheap and fast."
+            },
+            {
+                title: "We are at the Inflection Point",
+                timestamp: 1054,
+                timeDisplay: "17:34",
+                explanation: "The graph shows AI capability shooting upward, crossing from below-human to above-human intelligence in specific domains. We are not waiting for this to happen - it is happening right now.",
+                keyPoint: "Do not sleep on this. This is the moment the curve goes vertical.",
+                realWorld: "You have access to these same AI tools. The question is whether you learn to use them before or after everyone else does."
+            }
+        ];
+
+        function openPopup(index) {
+            var concept = concepts[index];
+            document.getElementById('popupTipNum').textContent = 'Concept ' + (index + 1) + ' of 9';
+            document.getElementById('popupTitle').textContent = concept.title;
+            
+            var html = '<div class="popup-section">' +
+                '<h4>💡 Whats Happening</h4>' +
+                '<p>' + concept.explanation + '</p>' +
+                '</div>' +
+                '<div class="popup-section">' +
+                '<h4>🎯 Key Point</h4>' +
+                '<div class="highlight-box">' +
+                '<div class="highlight-text">' + concept.keyPoint + '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="popup-section">' +
+                '<h4>🌍 Real World</h4>' +
+                '<div class="highlight-box green">' +
+                '<div class="highlight-text">' + concept.realWorld + '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="popup-section">' +
+                '<h4>🎬 Watch This Section</h4>' +
+                '<button class="watch-btn" onclick="jumpToTime(' + concept.timestamp + ')">' +
+                '▶ Watch in video <span class="timestamp">' + concept.timeDisplay + '</span>' +
+                '</button>' +
+                '</div>';
+            
+            document.getElementById('popupBody').innerHTML = html;
+            document.getElementById('popupOverlay').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closePopup(event) {
+            if (!event || event.target === document.getElementById('popupOverlay')) {
+                document.getElementById('popupOverlay').classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        function jumpToTime(seconds) {
+            closePopup();
+            var iframe = document.getElementById('ytPlayer');
+            iframe.src = 'https://www.youtube.com/embed/N8I2wYXt4m8?start=' + seconds + '&autoplay=1';
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        }
+
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closePopup();
+        });
+    </script>
+</body>
+</html>
